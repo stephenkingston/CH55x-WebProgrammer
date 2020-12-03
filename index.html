@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CH55x Programming Tool</title>
+    <script src="http://cdn.jsdelivr.net/gh/DeqingSun/ch55xduino/bootloaderWebtool/ch55xbl.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<div class=heading id=top-bar><h2>CH55x WebProgrammer</h2>
+		<div class="button-bounding-box">
+			<div id="storage-info"></div>
+			<button id="connect" class="button"> Connect </button>
+			<button id="upload" class="button" value="Upload HEX File"> Upload file </button>
+			<input id="fileInput" type="file" style="display:none;">
+			<div id="about" onclick="(function(){
+									document.getElementById('aboutPopup').style.display = 'block';})()">i</div>
+		</div>
+	
+	</div>
+</head>
+
+<body>
+<!--   About Popup  -->
+	<div id="aboutPopup" class="popup">
+		<div class="download-popup">
+			<div class="popup-header">
+				<span id="close-about">&times;</span>
+				<h3>About</h3>
+			</div>
+			<div class="popup-body">
+				<p class="progress"> This is a front end developed for the CH55xduino WebBootloader made by <a href="https://github.com/DeqingSun/ch55xduino/tree/ch55xduino/bootloaderWebtool" target="_blank">Deqing Sun.</a> Front-end UI improved by <a href="https://github.com/stephenkingston/CH55x-WebProgrammer" target="_blank">Stephen Kingston.</a></p>
+			</div>
+			<div class="popup-footer">
+				<p></p>
+			</div>
+		</div>
+	</div>
+    <p id="StatusLog">
+        <span id="status" class="hidden"></span>
+		<textarea id=logBox rows="4" readonly></textarea>
+    </p>
+    <p>
+        <input type='file' id="fileid" accept=".hex" hidden/>
+    </p>
+    <div id="drop_zone">
+        <p>Or drag HEX file here...</p>
+    </div>
+</body>
+<script src="util.js"></script>
+</html>

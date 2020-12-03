@@ -1,0 +1,222 @@
+#drop_zone {
+	border: 4px dashed LightBlue;
+	/* width:  calc(100vw - 20px); */
+	width: 96.5%;
+	height: calc(100vh - 310px);
+	line-height: calc(100vh - 310px);
+	text-align: center;
+	background-color: #f2f2f2;
+	margin: 0 auto;
+	padding: 0;
+	top:70px;
+	position: relative;
+}
+
+#drop_zone:hover {
+	background-color: #e8e6e6;
+	transition: background-color 0.4s linear;
+	padding: 0;
+}
+
+#top-bar
+{
+    position: fixed;
+    color: white;
+	display: inline-flex;
+    background-blend-mode: multiply;
+    /* background: transparent url("../media/header.jpg"); */
+	background-color: Blue;
+    margin: 0;
+    height: 70px;
+    padding: 0 0 0 0;
+    align-items: center;
+    width: 100%;
+    overflow: visible;
+    top: 0;
+    z-index: 3;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.1),4px 6px 10px 4px rgba(0, 0, 0, 0.15);
+}
+
+.heading h2
+{
+    height: auto;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 40%;
+    position:inherit;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+html, body
+{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  height: 100%;
+  font-family: "3DS Fonticon", sans-serif;
+  font-size-adjust: inherit;
+  font-size: medium;
+}
+
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-family: "3DS Fonticon", sans-serif;
+  font-size-adjust: inherit;
+  font-size: medium;
+}
+
+.button-bounding-box
+{
+    display: inline-flex;
+    position: fixed;
+    right: 15px;
+}
+
+.button{
+    position: relative;
+    border: none;
+    padding: 10px;
+    font-size: large;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.button:hover{
+    background: coral;
+    cursor: context-menu;
+    border: none;
+}
+.button:active{
+    border:none
+}
+
+.popup {
+    display:none;
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: fade-in 0.2s linear;
+}
+.popup-header
+{
+    padding: 2px 16px;
+    background-color: rgba(87, 87, 87, 0.16);
+    background-blend-mode: multiply;
+    /*background-image: url("../media/header.jpg");*/
+	background-color: Blue;
+    background-position: right;
+    color: white;
+}
+
+.popup-body {
+    padding: 2px 16px;
+}
+
+.popup-footer {
+    padding: 2px 16px;
+    background-color: rgba(87, 87, 87, 0.16);
+    background-blend-mode: multiply;
+    /*background-image: url("../media/header.jpg");*/
+	background-color: Blue;
+    background-position: left;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#close, #close-about{
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover, #close-about:hover,
+#close:hover, #close-about:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.download-popup {
+    position: relative;
+    top: 25%;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+
+#about {
+    font-family: georgia,garamond,serif;font-size:35px;
+    margin-left: 28px;
+    margin-right: 15px;
+}
+
+#about:hover {
+    cursor: pointer;
+    color: #004484;
+}
+
+.about {
+    display: block;
+    width: 40%;
+    height: fit-content;
+}
+
+#aboutPopup {
+    position: absolute;
+    horiz-align: center;
+    display: none;
+}
+
+.about-popup {
+    display: inline;
+}
+
+#StatusLog {
+	top: 70px;
+	height: 180px;
+	width: 98vw;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+#logBox
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 97vw;
+	height: 94%;
+	max-width: 100%;
+	text-align: left;
+}
+
+.hidden {
+	display: none;
+}
+
