@@ -2,8 +2,8 @@
 	border: 4px dashed LightBlue;
 	/* width:  calc(100vw - 20px); */
 	width: 96.5%;
-	height: calc(100vh - 310px);
-	line-height: calc(100vh - 310px);
+	height: 48vh;
+	line-height: 48vh;
 	text-align: center;
 	background-color: #f2f2f2;
 	margin: 0 auto;
@@ -198,7 +198,7 @@ body {
 
 #StatusLog {
 	top: 70px;
-	height: 180px;
+	height: 30vh;
 	width: 98vw;
 	position: relative;
 	margin: 0 auto;
